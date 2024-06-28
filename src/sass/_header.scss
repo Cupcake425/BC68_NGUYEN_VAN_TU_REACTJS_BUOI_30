@@ -1,0 +1,33 @@
+.header {
+  background-color: #212529;
+  .header_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+    .header_title {
+      a {
+        color: white;
+        font-size: 1.25rem;
+      }
+    }
+    .header_nav {
+      ul {
+        display: flex;
+        li {
+          margin-right: 20px;
+          a {
+            color: rgba(255, 255, 255, 0.55);
+            transition: 0.2s;
+            &:hover {
+              color: rgba(255, 255, 255, 0.75);
+            }
+            &.active {
+              color: rgba(255, 255, 255, 0.9);
+            }
+          }
+        }
+      }
+    }
+  }
+}
